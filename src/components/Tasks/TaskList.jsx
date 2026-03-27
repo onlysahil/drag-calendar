@@ -1,0 +1,31 @@
+import { tasks } from "../../data/dummyTasks";
+import TaskItem from "./TaskItem";
+
+const TaskList = () => {
+  return (
+    <div className="task-list">
+      <h2 className="task-title">
+        <span className="task-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m10.925 15.125l-1.4-1.4q-.15-.15-.325-.225t-.362-.075t-.375.075t-.338.225q-.3.3-.3.713t.3.712l2.125 2.15q.15.15.325.213t.375.062t.375-.062t.325-.213l4.225-4.225q.3-.3.3-.725t-.3-.725t-.725-.3t-.725.3zM6 22q-.825 0-1.412-.587T4 20V4q0-.825.588-1.412T6 2h7.175q.4 0 .763.15t.637.425l4.85 4.85q.275.275.425.638t.15.762V20q0 .825-.587 1.413T18 22zm7-14V4H6v16h12V9h-4q-.425 0-.712-.288T13 8M6 4v5z"
+            />
+          </svg>
+        </span>
+        Tasks
+      </h2>
+
+      {tasks.map((task) => (
+        <TaskItem key={task.id} task={task} />
+      ))}
+    </div>
+  );
+};
+
+export default TaskList;
