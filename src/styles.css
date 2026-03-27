@@ -48,7 +48,7 @@
 .app {
   display: flex;
   height: 100vh;
-  background: #f5f6fa;
+
 }
 
 /* Days row */
@@ -179,7 +179,7 @@
 /* Sidebar */
 .sidebar {
   width: 25%;
-  padding: 16px;
+
 }
 
 .sidebar-card {
@@ -208,7 +208,7 @@
 /* Calendar */
 .calendar {
   width: 75%;
-  padding: 16px;
+ 
 }
 
 .calendar-card {
@@ -306,4 +306,60 @@
 .more {
   font-size: 11px;
   color: #777;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  
+  .app {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .calendar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .calendar-card,
+  .sidebar-card {
+    padding: 12px;
+  }
+
+  /* Reduce grid cell height */
+  .cell {
+    height: 80px;
+    padding: 4px;
+  }
+
+  /* Smaller text */
+  .calendar-title {
+    font-size: 16px;
+  }
+
+  .day {
+    font-size: 12px;
+  }
+
+  .cell-task {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+
+  /* Stack header properly */
+  .calendar-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .calendar-left {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
