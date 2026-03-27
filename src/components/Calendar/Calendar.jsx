@@ -2,7 +2,7 @@ import { useState } from "react";
 import CalendarGrid from "./CalendarGrid";
 import { getMonthData } from "../../utils/dateUtils";
 
-const Calendar = ({ tasksByDate, setSelectedDate }) => {
+const Calendar = ({ tasksByDate }) => {
   const [currentDate, setCurrentDate] = useState(new Date());
 
   const { month, year, dates } = getMonthData(currentDate);
@@ -42,7 +42,7 @@ const Calendar = ({ tasksByDate, setSelectedDate }) => {
       <CalendarGrid
         dates={dates}
         tasksByDate={tasksByDate}
-        onMoreClick={setSelectedDate} 
+        onMoreClick={() => {}}
       />
     </div>
   );
