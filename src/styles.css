@@ -35,15 +35,13 @@ body {
 .btn {
   padding: 6px 10px;
   border: none;
-  background: #eee;
+  background: lavender;
   border-radius: 6px;
   cursor: pointer;
   transition: 0.2s;
 }
 
-.btn:hover {
-  background: #ddd;
-}
+
 
 .today-btn {
   border: 1px solid #ddd;
@@ -293,7 +291,7 @@ body {
 
   .calendar-left {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .calendar,
