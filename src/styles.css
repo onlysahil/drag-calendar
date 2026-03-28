@@ -7,6 +7,7 @@
 }
 
 body {
+    overflow-x: hidden;
   background: #f5f6fa;
 }
 
@@ -260,6 +261,7 @@ body {
   }
 
   .calendar {
+    overflow-x: auto;
     width: 100%;
     padding: 10px;
   }
@@ -280,10 +282,7 @@ body {
     font-size: 16px;
   }
 
-  .day {
-      min-width: 600px;
-    font-size: 12px;
-  }
+  
 
   .cell-task {
     font-size: 10px;
@@ -303,7 +302,7 @@ body {
   }
 
   .grid {
-  overflow-x: auto;
+  
     min-width: 600px;
 }
 }
